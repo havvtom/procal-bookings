@@ -1,4 +1,4 @@
-
+import axios from 'axios'
 export default {
   /*
   ** Nuxt rendering mode
@@ -36,6 +36,12 @@ export default {
   plugins: [
     '~/plugins/auth'
   ],
+
+  generate: {
+    routes: [
+      '/10'
+    ]
+  },
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
